@@ -9,7 +9,7 @@ const Nav = () => {
   <span className='roboto-condensed text-xl font-bold text-white flex'> <Copyright/> Code By Rushikesh</span>
   <div className="flex gap-5 text-xl font-bold text-white roboto-condensed ">
 
-    <h4>Work</h4>
+    <Link href="/Work"><h4>Work</h4></Link>
     <Link href="/Aboutme"><h4>About</h4></Link>
     <Link href="/Contact"><h4>Contact</h4></Link>
   </div>

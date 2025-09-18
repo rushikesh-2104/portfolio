@@ -70,7 +70,13 @@ const About = () => {
       </Link>
       <div className='relative top-30 left-20 font-sans'>RECENT WORKS</div>
       <HoverExpand_001 images={images} className='relative top-50 left-40  '/>
-      <InteractiveHoverButton className='top-80 left-170 '>Detailed Work</InteractiveHoverButton>
+      
+      <Link href="/Work">
+      <InteractiveHoverButton className='top-80 left-170 '>
+        Detailed Work
+      </InteractiveHoverButton>
+      </Link>
+      
 
 
     
