@@ -15,39 +15,39 @@ const About = () => {
   
   const images = [
     {
-      src: "/ofs.png",
+      src: "/ofsposter.png",
       alt: "One Fitness Studio Web-Design",
       code: "# 01",
     },
     {
-      src: "/focusfolio.png",
-      alt: "Photograohy portfolio",
+      src: "/resumeposter.png",
+      alt: "Resume maker",
       code: "# 02",
     },
 
     {
-      src: "/resume.png",
-      alt: "resume maker web-app",
+      src: "/sasposter.png",
+      alt: "Face recognization",
       code: "# 03",
     },
 
     {
-      src: "/video-call.png",
-      alt: "Online video calls",
+      src: "/voiceposter.png",
+      alt: "voice assistance",
       code: "# 04",
     },
     {
-      src: "/bank.png",
+      src: "/talksyncposter.png",
       alt: "Description 4",
       code: "# 04",
     },
     {
-      src: "/video-call.png",
+      src: "/coronaposter.png",
       alt: "Description 4",
       code: "# 04",
     },
     {
-      src: "/resume.png",
+      src: "https://cdn.dribbble.com/userupload/16714261/file/original-32311956f97c735076b83ad5a879fdc4.png?resize=1504x1128&vertical=center",
       alt: "Description 4",
       code: "# 04",
     },
