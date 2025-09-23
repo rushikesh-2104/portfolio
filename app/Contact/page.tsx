@@ -1,10 +1,20 @@
+"use client";
 import { AnimateIcon } from '@/components/animate-ui/icons/icon'
 import { Input } from '@/components/ui/input'
 import { ArrowDownRight, UsersRound } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
 
 const page = () => {
-    
+  const [form,setForm]= useState({name:"" , email:"", service:"" ,message:"" })  
+
+  async function send(){
+    const res = await fetch('/api/contactme',{
+        method:"POST",
+        body:JSON.stringify(form),
+    })
+
+  }
+
   return (
 
 <div className='bg-black text-white h-full w-full' >
@@ -44,19 +54,19 @@ const page = () => {
       
       <div className="w-[40vw] border-t border-gray-500"></div>
       <label className='text-3xl py-2' >What's Your Name?</label>
-      <Input type="text" id="name" placeholder="Rushikesh Mhatre *" className='h-[5vh] text-2xl border-0'/>
+      <Input onChange={(e)=>setForm((p)=>({...p,name:e.target.value}))} value={form.name} type="text" id="name" placeholder="Rushikesh Mhatre *" className='h-[5vh] text-2xl border-0'/>
 
       <div className="w-[40vw] border-t border-gray-500"></div>
       <label className='text-3xl py-2' >What's Your Email?</label>
-      <Input type="email" id="email" placeholder="hrishi12@gmail.com*" className='h-[5vh] text-2xl border-0'/>
+      <Input onChange={(e)=>setForm((p)=>({...p,email:e.target.value}))} value={form.email} type="email" id="email" placeholder="hrishi12@gmail.com*" className='h-[5vh] text-2xl border-0'/>
 
       <div className="w-[40vw] border-t border-gray-500"></div>
       <label className='text-3xl py-2' >What services are you looking for?</label>
-      <Input type="text" id="services" placeholder="web-design , web-development..." className='h-[5vh] text-2xl border-0'/>
+      <Input onChange={(e)=>setForm((p)=>({...p,service:e.target.value}))} value={form.service} type="text" id="services" placeholder="web-design , web-development..." className='h-[5vh] text-2xl border-0'/>
     
       <div className="w-[40vw] border-t border-gray-500"></div>
       <label className='text-3xl py-2' >Your Message</label>
-      <Input type="text" id="message" placeholder="Hii Rushikesh, can you help me with...*" className='h-[5vh] text-2xl border-0'/>
+      <Input onChange={(e)=>setForm((p)=>({...p,message:e.target.value}))} value={form.message} type="text" id="message" placeholder="Hii Rushikesh, can you help me with...*" className='h-[5vh] text-2xl border-0'/>
 
      </div>
     </div>
@@ -79,7 +89,7 @@ const page = () => {
 </div>
 
  <div className="w-[60vw] px-5 border-t border-gray-500 "></div> 
- <div className='lora relative left-170 bottom-15 w-[8vw] h-[16vh] rounded-full bg-white text-black flex justify-center items-center text-3xl hover:bg-amber-100 ' >Send</div>
+ <button  className='lora relative left-170 bottom-15 w-[8vw] h-[16vh] rounded-full bg-white text-black flex justify-center items-center text-3xl hover:bg-amber-100 ' onClick={send} >Send</button>
 
  </div>   
 </div>

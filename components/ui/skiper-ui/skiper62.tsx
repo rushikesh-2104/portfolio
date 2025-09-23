@@ -80,7 +80,7 @@ const Skiper62 = () => {
             
           <div className="bg-white h-[10vh] w-[20vw] absolute left-0 bottom-100 rounded-r-full z-1000">
           <div className="flex justify-around py-2">
-            <span className=" font-serif text-l py-5 px-5 scale-150 wrap-break-word merriweather">Located in India</span>
+            <span className="  text-l py-5 px-5 scale-150 wrap-break-word ">Located in India</span>
             <span><img src="/world.gif" className="h-[8vh] w-[5vw] " alt="" /></span>
           </div>
           </div>
@@ -98,7 +98,7 @@ const Skiper62 = () => {
 
           
 
-            <ScrollVelocityContainer className="merriweather absolute text-white top-140  scale-180 text-9xl  font-serif font-bold">
+            <ScrollVelocityContainer className="roboto-condensed absolute text-white top-140  scale-180 text-9xl  font-serif ">
                <ScrollVelocityRow baseVelocity={10} direction={1} >
                 Rushikesh Mhatre -
                </ScrollVelocityRow>

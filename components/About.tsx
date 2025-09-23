@@ -63,10 +63,10 @@ const About = () => {
   return (
     <div className='roboto-condensed w-screen h-[280vh]  py-20 px-10 flex justify-center bg-black z-1000 absolute'>
       <div className='text-white'>
-      <h1 className='text-8xl'>Turning concepts into reality through code and design.</h1> <br />
+      <h1 className='text-5xl text-center italic'>"Turning concepts into reality through code and design."</h1> <br />
       <div className="relative top-40 left-20  w-[80vw] border-t border-gray-300"></div>
       <Link href="/Aboutme">      
-      <div className='lora relative top-12 left-250 w-[15vw] h-[30vh] rounded-full bg-white text-black flex justify-center items-center  text-3xl hover:bg-amber-100 '>About Me</div>
+      <div className=' relative top-12 left-250 w-[15vw] h-[30vh] rounded-full bg-white text-black flex justify-center items-center  text-3xl hover:bg-amber-100 '>About Me</div>
       </Link>
       <div className='relative top-30 left-20 font-sans'>RECENT WORKS</div>
       <HoverExpand_001 images={images} className='relative top-50 left-40  '/>
