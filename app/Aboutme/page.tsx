@@ -200,94 +200,10 @@ const ReviewCard = ({ img, name, body }: { img: string; name: string; body: stri
   ];
 
 
-  const testimonials1 = [
-    {
-      quote:
-        " I began my engineering journey in a friendly and supportive learning environment that encouraged growth and collaboration. ",
-      name: "",
-      designation: " College Life ",
-      src: "/hoc1.jpg",
-    },
-    {
-      quote:
-        "I also enjoyed and contributed to the celebration of various college festivals, creating memorable experiences with peers.",
-      name: "",
-      designation: " Festivals ",
-      src: "/hoc2.jpg",
-    },
-    {
-      quote:
-        "Finally, as the Class Representative, I learned responsibility and honed my organizational and communication skills.",
-      name: "",
-      designation: " Class Representative ",
-      src: "/hoc3.jpg",
-    },
-    {
-      quote:
-        "Taking on leadership roles, I became the Media & Social Media Head of the ACE and ISTE clubs, where I managed events and digital presence.",
-      name: "",
-      designation: "Social Media's Head",
-      src: "/hoc4.jpg",
-    },
-    
-  ]
+  
 
-  const testimonials = [
-    {
-      quote:
-        " I began my diploma journey in a friendly and supportive learning environment that encouraged growth and collaboration. ",
-      name: "",
-      designation: " College Life ",
-      src: "/vp2.jpg",
-    },
-    {
-      quote:
-        "I also enjoyed and contributed to the celebration of various college festivals, creating memorable experiences with peers.",
-      name: "",
-      designation: " Festivals ",
-      src: "/vp5.jpg",
-    },
-    {
-      quote:
-        "Finally, as the Class Representative, I learned responsibility and honed my organizational and communication skills.",
-      name: "",
-      designation: " Class Representative ",
-      src: "/vp3.jpg",
-    },
-    {
-      quote:
-        "Taking on leadership roles, I became the team leader of my final year project team, where I managed my team and project.",
-      name: "",
-      designation: "Team Leader",
-      src: "/vp1.jpg",
-    },
-    
-  ]
+  
 
-  const data = [
-    {
-      title: "2025",
-      content: (
-        <div>
-          <h1 className='text-4xl font-bold'>Intern at csociety.info.tech</h1>
-          <p className="mb-8 text-2xl font-bold text-gray-300 md:text-sm dark:text-neutral-200">
-            I have completed my 3 month internship at csociety.infotech <br /> as full stack MEAN Developer
-            intern on-site. 
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img src="/bank.png" alt="startup template" className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img src="https://assets.aceternity.com/templates/startup-2.webp" alt="startup template" className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img src="https://assets.aceternity.com/templates/startup-3.webp" alt="startup template" className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-            <img src="https://assets.aceternity.com/templates/startup-4.webp" alt="startup template" className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60" />
-          </div>
-        </div>
-      ),
-    },
-    { title: "2025", content: ( <div> <h1 className='text-4xl font-bold'>Bachelor of Engineering in Information Technology</h1> <p className="mb-8 text- xl font-normal text-gray-300"> I had completed my B.E. Degree in Information Technology <br /> from Pillai HOC college of engineering with first class ranking. </p> <AnimatedTestimonials testimonials={testimonials1}/> </div> ), 
-      },
-      { title: "2022", content: ( <div> <h1 className='text-4xl font-bold'>Diploma in Information Technology</h1> <p className="mb-8 text- xl font-normal text-gray-300"> I had completed my B.E. Degree in Information Technology <br /> from Pillai HOC college of engineering with first class ranking. </p> <AnimatedTestimonials testimonials={testimonials}/> </div> ), },
-      
-    ]
   
 
 
@@ -348,7 +264,7 @@ const ReviewCard = ({ img, name, body }: { img: string; name: string; body: stri
 
 <div className='  bg-amber-100'>
     <div className="relative  w-full overflow-clip">
-      <Timeline data={data} />
+      <Timeline  />
     </div>
 </div> 
 
@@ -441,17 +357,18 @@ const ReviewCard = ({ img, name, body }: { img: string; name: string; body: stri
         Photographs clicked by Rushikesh Mhatre.
       </p>
       {items.map((item) => (
-        <DraggableCardBody className={item.className}>
-          <img
-            src={item.image}
-            alt={item.title}
-            className="pointer-events-none relative z-10 h-80 w-80 object-cover"
-          />
-          <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
-            {item.title}
-          </h3>
-        </DraggableCardBody>
-      ))}
+  <DraggableCardBody key={item.title} className={item.className}>
+    <img
+      src={item.image}
+      alt={item.title}
+      className="pointer-events-none relative z-10 h-80 w-80 object-cover"
+    />
+    <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      {item.title}
+    </h3>
+  </DraggableCardBody>
+))}
+
     </DraggableCardContainer>
       </div>
     </div>
