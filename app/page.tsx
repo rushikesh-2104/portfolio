@@ -1,5 +1,4 @@
 import About from '@/components/About'
-import Nav from '@/components/Nav'
 import { Skiper62 } from '@/components/ui/skiper-ui/skiper62'
 import React from 'react'
 
