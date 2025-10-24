@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.dribbble.com",
       },
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.icons8.com",
+      },
     ],
   },
 };

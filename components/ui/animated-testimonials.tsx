@@ -20,9 +20,12 @@ export const AnimatedTestimonials = ({
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
-  const [rotations, ] = useState<number[]>(
-    testimonials.map(() => Math.floor(Math.random() * 21) - 10)
-  );
+  const [rotations, setRotations] = useState<number[]>([]);
+
+  // Generate random rotations only on the client
+  useEffect(() => {
+    setRotations(testimonials.map(() => Math.floor(Math.random() * 21) - 10));
+  }, [testimonials]);
 
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -34,6 +37,7 @@ export const AnimatedTestimonials = ({
 
   const isActive = (index: number) => index === active;
 
+  // Autoplay
   useEffect(() => {
     if (autoplay) {
       const interval = setInterval(handleNext, 5000);
@@ -44,6 +48,7 @@ export const AnimatedTestimonials = ({
   return (
     <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+        {/* Images */}
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -92,6 +97,7 @@ export const AnimatedTestimonials = ({
           </div>
         </div>
 
+        {/* Text */}
         <div className="flex flex-col justify-between py-4">
           <motion.div
             key={active}
@@ -112,7 +118,11 @@ export const AnimatedTestimonials = ({
                   key={index}
                   initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
                   animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut", delay: 0.02 * index }}
+                  transition={{
+                    duration: 0.2,
+                    ease: "easeInOut",
+                    delay: 0.02 * index,
+                  }}
                   className="inline-block"
                 >
                   {word}&nbsp;
@@ -121,15 +131,18 @@ export const AnimatedTestimonials = ({
             </motion.p>
           </motion.div>
 
+          {/* Navigation */}
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
+              aria-label="Previous testimonial"
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             >
               <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
+              aria-label="Next testimonial"
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             >
               <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />

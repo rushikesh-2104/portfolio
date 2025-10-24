@@ -1,4 +1,5 @@
 "use client";
+
 import { AnimatedList } from '@/components/magicui/animated-list'
 import { BoxReveal } from '@/components/magicui/box-reveal'
 import { CardStack } from '@/components/ui/card-stack'
@@ -40,7 +41,7 @@ const Page = () => {
           <div className='flex justify-between'>
             <div className="grid grid-cols-2 grid-rows-1 gap-4 ">
               <div className='flex justify-center'>
-                <div className="bg-white roboto-condensed border-white border-3 h-[45vh] w-[23vw] rounded-full overflow-hidden ">
+                <div className="bg-white relative roboto-condensed border-white border-3 h-[45vh] w-[23vw] rounded-full overflow-hidden ">
                   <Image
                     src="/photo1.jpg"
                     alt="profile"
