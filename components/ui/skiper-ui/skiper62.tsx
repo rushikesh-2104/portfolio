@@ -99,7 +99,7 @@ const Skiper62 = () => {
               <Image 
                 src="/rushi.png" 
                 alt="Rushikesh" 
-                width={1200} 
+                width={900} 
                 height={1000} 
                 className="relative h-[100vh] bottom-0" 
               />
