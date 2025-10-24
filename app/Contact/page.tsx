@@ -170,11 +170,11 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Divider & Button */}
-        <div className="w-full max-w-2xl mx-auto border-t border-gray-500 mt-10"></div>
+        
+        <div className="w-full max-w-2xl mx-auto border-t border-gray-500 mt-10 relative right-35 bottom-10 "></div>
         <div className="flex justify-center mt-10">
           <button
-            className="font-lora w-[10rem] h-[10rem] rounded-full bg-white text-black flex justify-center items-center text-2xl hover:bg-amber-100"
+            className="font-lora w-[10rem] h-[10rem] rounded-full bg-white text-black flex justify-center items-center text-2xl relative bottom-40 hover:bg-amber-100"
             onClick={send}
           >
             Send
