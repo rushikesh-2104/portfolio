@@ -77,23 +77,23 @@ const About = () => {
           <ArrowDownLeft/>
         </div>
 
-        <div className="h-[5vh] w-[15vw] relative top-80 left-50 text-center p-2 border border-white rounded-full text-white bg-black 
+        <div className="h-[5vh] w-[15vw] relative top-83 left-50 text-center p-2 border border-white rounded-full text-white bg-black 
   transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-white hover:text-black">
   hrishi210402@gmail.com
 </div>
 
-<div className="h-[5vh] w-[10vw] relative top-70 left-120 text-center p-2 border border-white rounded-full text-white bg-black 
+<div className="h-[5vh] w-[10vw] relative top-74 left-120 text-center p-2 border border-white rounded-full text-white bg-black 
   transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-white hover:text-black">
   +91 7208553533
 </div>
 
 
-        <div className='relative top-135 flex justify-between px-5 text-gray-300'>
+        <div className='relative top-125 flex justify-between px-5 text-gray-300'>
           <span>version</span>
           <span className='relative right-57'>Socials</span>
         </div>
 
-        <div className='relative top-140 flex justify-between px-5 text-gray-300'>
+        <div className='relative top-130 flex justify-between px-5 text-gray-300'>
           <span className='flex'> 2025 <Copyright/> Edition</span>
           <span className="flex">
             <Link004 href="https://www.instagram.com/emoji2104/">Instagram</Link004>
