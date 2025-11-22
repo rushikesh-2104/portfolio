@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Rushikesh Mhatre" }],
   creator: "Rushikesh Mhatre",
 
-  metadataBase: new URL("https://your-portfolio-url.com"), 
+  metadataBase: new URL("https://portfolio-one-green-75.vercel.app"),
 
   
   openGraph: {
     title: "Rushikesh Mhatre | Frontend Developer Portfolio",
     description:
       "Explore my professional portfolio showcasing projects in Next.js, Angular, UI/UX and modern web development.",
-    url: "https://your-portfolio-url.com",
+   url: "https://portfolio-one-green-75.vercel.app",
     siteName: "Rushikesh Portfolio",
     images: [
       {
