@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Rushikesh Mhatre" }],
   creator: "Rushikesh Mhatre",
 
-  metadataBase: new URL("https://your-portfolio-url.com"), // 🔴 Replace with your real URL
+  metadataBase: new URL("https://your-portfolio-url.com"), 
 
-  // ✅ Facebook, LinkedIn, WhatsApp Sharing
+  
   openGraph: {
     title: "Rushikesh Mhatre | Frontend Developer Portfolio",
     description:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Rushikesh Portfolio",
     images: [
       {
-        url: "/og-image.png", // Place this in public folder
+        url: "/card.png", 
         width: 1200,
         height: 630,
         alt: "Rushikesh Mhatre Portfolio Preview",
