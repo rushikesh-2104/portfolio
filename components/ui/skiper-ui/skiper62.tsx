@@ -31,7 +31,7 @@ const Skiper62 = () => {
   }, [key, greetings.length]);
 
   return (
-    <div className="min-h-screen w-screen z-100 bg-black text-white overflow-x-hidden">
+    <div className="h-full w-[100vw] z-100 bg-black text-white overflow-x-hidden">
       {/* === Landing Section === */}
       <AnimatePresence mode="wait">
         {!showPortfolio && (
@@ -72,26 +72,29 @@ const Skiper62 = () => {
           >
             <Nav/>
 
-            <div className="bg-white h-[10vh] w-[20vw] absolute left-0 bottom-100 rounded-r-full z-1000">
-              <div className="flex justify-around py-2">
-                <span className="text-l py-5 px-5 scale-150 wrap-break-word">Located in India</span>
-                <span>
-                  <Image 
-                    src="/world.gif" 
-                    alt="World" 
-                    width={80} 
-                    height={80} 
-                    className="h-[8vh] w-[5vw]" 
-                  />
-                </span>
-              </div>
-            </div>
+           <div className="hidden md:block bg-white h-[10vh] w-[20vw] absolute left-0 bottom-100 rounded-r-full z-1000">
+  <div className="flex justify-around py-2">
+    <span className="text-l py-5 px-5 scale-150 wrap-break-word">
+      Located in India
+    </span>
+    <span>
+      <Image 
+        src="/world.gif" 
+        alt="World" 
+        width={80} 
+        height={80} 
+        className="h-[8vh] w-[5vw]" 
+      />
+    </span>
+  </div>
+</div>
 
-            <div className="absolute z-1000 right-120 bottom-125 text-white scale-130">
+
+            <div className="absolute z-1000 md:left-260 left-8 bottom-35 md:bottom-125 text-white scale-130">
               <ArrowDownRight/>
             </div>
 
-            <span className="absolute z-1000 right-15 bottom-90 text-white text-5xl">
+            <span className="absolute z-1000 md:left-270 md:bottom-90 bottom-10 text-white md:text-5xl left-10 text-4xl">
               Software Developer <br /> & Designer
             </span>
 
@@ -100,12 +103,13 @@ const Skiper62 = () => {
                 src="/rushi.png" 
                 alt="Rushikesh" 
                 width={900} 
-                height={1000} 
-                className="relative h-[100vh] bottom-0" 
+                height={1000}
+                quality={100} 
+                className="relative h-[100vh]  bottom-0 " 
               />
             </div>
 
-            <ScrollVelocityContainer className="lora absolute text-white top-140 scale-180 text-9xl">
+            <ScrollVelocityContainer className="lora absolute text-white top-110 md:top-140 scale-160 md:scale-180 text-9xl ">
               <ScrollVelocityRow baseVelocity={10} direction={1}>
                 Rushikesh Mhatre -
               </ScrollVelocityRow>
@@ -118,3 +122,4 @@ const Skiper62 = () => {
 };
 
 export { Skiper62 };
+

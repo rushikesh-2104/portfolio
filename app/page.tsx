@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='h-screen bg-black w-screen overflow-hidden'>
+    <div className='h-screen bg-slate-200 w-[100vw] overflow-x-hidden'>
       <div className=''>
       <Skiper62/>
       <About/>

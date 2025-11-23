@@ -37,11 +37,11 @@ const Page = () => {
     <div className='bg-black text-white h-full w-full'>
       <div>
         {/* Header Section */}
-        <div className="grid grid-cols-2 grid-rows-1 gap-0 py-10 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 py-10 px-6 md:px-10">
           <div className='flex justify-between'>
-            <div className="grid grid-cols-2 grid-rows-1 gap-4 ">
+            <div className="md:grid grid-cols-2 grid-rows-1 gap-4 ">
               <div className='flex justify-center'>
-                <div className="bg-white relative roboto-condensed border-white border-3 h-[45vh] w-[23vw] rounded-full overflow-hidden ">
+                <div className="bg-white relative roboto-condensed border-white border-3 h-[45vh] w-[23vw] rounded-full overflow-hidden  hidden md:block">
                   <Image
                     src="/photo1.jpg"
                     alt="profile"
@@ -51,11 +51,11 @@ const Page = () => {
                   />
                 </div>
               </div>
-              <div className='py-10'>
+              <div className='py-5 relative'>
                 <BoxReveal>
-                  <h3 className='text-5xl font-bold font-serif'>Rushikesh Mhatre</h3>
+                  <h3 className='md:text-5xl text-5xl font-bold font-serif'>Rushikesh Mhatre</h3>
                 </BoxReveal>
-                <div className='py-5'>
+                <div className='md:py-5 py-8'>
                   <BoxReveal>
                     <h3 className='text-3xl font-bold'> A Software Developer &amp; Designer </h3>
                     <h3 className='text-3xl font-bold py-2'> Intern at csociety.Infotech </h3>
@@ -65,15 +65,15 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className='flex justify-center py-10'>
-            <div className=' h-[60vh]'>
+          <div className='flex justify-center py-10 '>
+            <div className=' h-[40vh] '>
               <AnimatedList>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-amber-200 text-black text-center '>Backend Developer</p>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-green-200 text-black text-center  '>Frontend Developer</p>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-blue-200 text-black text-center  '>UI/UX</p>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-red-200 text-black text-center  '>Web-Developer</p>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-gray-300 text-black text-center  '>Software Designer</p>
-                <p className=' anton-regular w-[20vw] h-[5vh] py-2 bg-gray-300 text-black text-center  '>FreeLancer</p>
+                <p className=' anton-regular md:w-[20vw] w-[65vw] h-[5vh] py-2 bg-amber-200 text-black text-center '>Backend Developer</p>
+                <p className=' anton-regular md:w-[20vw] h-[5vh] py-2 bg-green-200 text-black text-center  '>Frontend Developer</p>
+                <p className=' anton-regular md:w-[20vw] h-[5vh] py-2 bg-blue-200 text-black text-center  '>UI/UX</p>
+                <p className=' anton-regular md:w-[20vw] h-[5vh] py-2 bg-red-200 text-black text-center  '>Web-Developer</p>
+                <p className=' anton-regular md:w-[20vw] h-[5vh] py-2 bg-gray-300 text-black text-center  '>Software Designer</p>
+                <p className=' anton-regular md:w-[20vw] h-[5vh] py-2 bg-gray-300 text-black text-center  '>FreeLancer</p>
               </AnimatedList>
             </div>
           </div>
@@ -87,10 +87,10 @@ const Page = () => {
         </div>
 
         {/* Project Section */}
-        <div className='flex justify-center py-20'>
-          <div className="grid grid-cols-4 grid-rows-4 gap-4">
+        <div className='flex md:mx-15 justify-center py-20 '>
+          <div className="md:grid grid-cols-4 grid-rows-4 gap-4">
             <div className="col-span-2 row-span-2">
-              <div className='py-10 px-10'>
+              <div className='py-10 md:px-10 px-5'>
                 <span className='text-3xl font-bold font-serif'>TalkSync– Real-Time Virtual Meeting Platform</span><br />
                 <span className='text-xl text-gray-300 font-sans'>Angular, FastAPI, Whisper AI, Vercel</span> <br />
                 <span className='text-xl text-gray-300 font-sans'>Live Project Link : <a className='underline' href="https://talk-sync.vercel.app/">Talksync</a> </span> <br /><br />
@@ -102,7 +102,7 @@ const Page = () => {
                 <CardStack items={CARDS} />
               </div>
             </div>
-            <div className="col-span-4 row-span-2 row-start-3 py-20 px-20">
+            <div className="col-span-4 row-span-2 row-start-3 py-20 md:px-20 px-5">
               <span className=' text-xl roboto-condensed'>
                 TalkSync is a full-featured real-time video conferencing application that goes beyond traditional meeting platforms
                 by integrating <br /> Indian language translation for subtitles and AI-powered meeting summaries.
@@ -114,10 +114,10 @@ const Page = () => {
         </div>
 
         {/* Clubs Section */}
-        <div className=' py-20'>
-          <div className="grid grid-cols-4 grid-rows-4 gap-4">
+        <div className=' py-10'>
+          <div className="md:grid grid-cols-4 grid-rows-4 gap-4">
             <div className="col-span-2 row-span-2">
-              <div className='py-10 px-10'>
+              <div className='py-10 md:px-25 px-5'>
                 <span className='text-3xl font-bold font-serif'>ACE &amp; ISTE Student Clubs</span><br />
                 <span className='text-xl text-gray-300 font-sans'>Media &amp; Social Media Head</span> <br /><br />
                 <span className='text-xl text-gray-300 font-sans'>ISTE Student Club : <a className='underline font-bold' href="https://phcet.ac.in/students/student-activities/student-associations/iste-2/">&quot;The Indian Society for Technical Education&quot;</a> </span> <br />
@@ -125,11 +125,11 @@ const Page = () => {
               </div>
             </div>
             <div className="col-span-2 row-span-2 col-start-3">
-              <div className="flex items-center justify-center w-full ">
+              <div className="flex items-center justify-center w-full object-fill">
                 <CardStack items={CARDS1} />
               </div>
             </div>
-            <div className="col-span-4 row-span-2 row-start-3 py-20 px-20">
+            <div className="col-span-4 row-span-2 row-start-3 py-20 md:px-20 px-5">
               <span className='text-xl'>
                 Being part of the ACE Student Club and the ISTE Student Chapter, I took on the role of Media &amp; Social Media Head <br />
                 where I wasn&apos;t just a participant but also a storyteller. From capturing candid moments to designing engaging posts, <br />
@@ -142,15 +142,15 @@ const Page = () => {
         </div>
 
         {/* Photography Section */}
-        <div className='py-20'>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
-            <div className='px-10 py-50'>
+        <div className='py-10 md:px-20 '>
+          <div className="md:grid grid-cols-2 grid-rows-2 gap-4 ">
+            <div className='md:px-10 px-5 md:py-50 py-30'>
               <span className='text-3xl font-bold font-serif'>FocusFolio - Personal Photography</span><br />
               <span className='text-xl text-gray-300 font-sans'>- Personal Photography</span> <br /><br />
               <span className='text-xl text-gray-300 font-sans'>FocusFolio is live : <a className='underline font-bold' href="https://focusfolio.vercel.app/"> FocusFolio </a> </span> <br />
             </div>
-            <div className=''>
-              <DraggableCardContainer className="relative right-20 h-[40rem] w-full overflow-clip">
+            <div className='px-3 md:px-0'>
+              <DraggableCardContainer className="relative md:right-20 h-[40rem] w-full overflow-clip">
                 <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
                   Photographs clicked by Rushikesh Mhatre.
                 </p>
@@ -170,7 +170,7 @@ const Page = () => {
                 ))}
               </DraggableCardContainer>
             </div>
-            <div className="col-span-2 px-20 py-25 ">
+            <div className="col-span-2 md:px-20 px-5 py-25 ">
               <span className='text-xl'>
                 Hi, I&apos;m Rushikesh Prabhakar Mhatre, an aspiring technologist and a passionate mobile photographer from Navi Mumbai. <br />
                 FocusFolio is my creative space where I capture and showcase the beauty of everyday life all through the lens of a mobile phone. <br /><br />

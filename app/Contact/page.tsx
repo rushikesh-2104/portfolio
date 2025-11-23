@@ -34,18 +34,18 @@ const Page = () => {
   }
 
   return (
-    <div className="bg-black text-white min-h-screen w-full">
-      <div className="py-20 px-10">
+    <div className="bg-black text-white min-h-screen w-screen overflow-x-hidden overflow-y-hidden">
+      <div className="md:py-20 py-10 px-5 md:px-10">
         {/* Hero section */}
         <div className="grid grid-cols-2 gap-4 items-center">
           <div className="flex justify-center">
-            <span className="text-7xl font-roboto-condensed leading-tight">
+            <span className="md:text-7xl text-2xl font-roboto-condensed leading-tight">
               Let&apos;s Start a <br /> project together
             </span>
           </div>
 
           <div className="flex justify-center relative">
-            <div className="bg-white h-[25vh] w-[13vw] rounded-full overflow-hidden">
+            <div className="bg-white md:h-[25vh] h-[15vh] w-[35vw] md:w-[13vw] rounded-full overflow-hidden">
               <Image
                 className="h-full w-full object-cover"
                 src="/photo1.jpg"
@@ -56,14 +56,14 @@ const Page = () => {
               />
             </div>
 
-            <span className="absolute top-[60%] right-[20%] text-white">
+            <span className="absolute md:top-[100%] top-28 right-38  md:right-[65%] text-white">
               <ArrowDownRight size={40} />
             </span>
           </div>
         </div>
 
         {/* Form & Contact details */}
-        <div className="grid grid-cols-2 gap-10 py-16">
+        <div className="md:grid grid-cols-2 gap-10 py-16 overflow-x-hidden">
           {/* Form */}
           <div className="flex justify-center">
             <div className="grid w-full max-w-md items-center gap-6">
@@ -121,7 +121,7 @@ const Page = () => {
               <textarea
                 id="message"
                 placeholder="Hi Rushikesh, can you help me with... *"
-                className="h-[15vh] text-xl border-0 p-2 rounded-md text-black"
+                className="h-[15vh] text-xl border-1 p-2 rounded-md border-gray-500 text-black"
                 value={form.message}
                 onChange={(e) =>
                   setForm((p) => ({ ...p, message: e.target.value }))
@@ -132,7 +132,7 @@ const Page = () => {
           </div>
 
           {/* Contact details */}
-          <div className="flex flex-col justify-start gap-6">
+          <div className="flex flex-col justify-start gap-6 md:mt-0 mt-10">
             <div>
               <span className="text-gray-200 text-xl">Contact Details</span>
               <div className="text-gray-300 mt-2">
@@ -171,7 +171,7 @@ const Page = () => {
         </div>
 
         
-        <div className="w-full max-w-2xl mx-auto border-t border-gray-500 mt-10 relative right-35 bottom-10 "></div>
+        <div className="w-full max-w-2xl mx-auto border-t border-gray-500 mt-30 relative right-35 bottom-10 "></div>
         <div className="flex justify-center mt-10">
           <button
             className="font-lora w-[10rem] h-[10rem] rounded-full bg-white text-black flex justify-center items-center text-2xl relative bottom-40 hover:bg-amber-100"
