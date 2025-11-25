@@ -5,6 +5,7 @@ import { ArrowDownLeft, Copyright } from 'lucide-react';
 import { Link004 } from './ui/skiper-ui/skiper40';
 import Link from 'next/link';
 import Image from 'next/image';
+import AnimatedDiv from './animatedDiv';
 
 const About = () => {
   const images = [
@@ -50,10 +51,11 @@ const About = () => {
           </InteractiveHoverButton>
         </Link>
 
-        {/* Fixed unescaped apostrophe */}
+        <AnimatedDiv>
         <h1 className='roboto-condensed md:text-8xl text-5xl relative md:top-102 top-120 md:left-105 left-70'>
           &nbsp; &nbsp; Let&apos;s work <br /> together
         </h1>
+        </AnimatedDiv>
         <br />
 
         <div className="bg-white border-white border-2 md:h-[15vh] h-[0vh] md:w-[8vw] rounded-full overflow-hidden relative md:top-45 md:left-93">

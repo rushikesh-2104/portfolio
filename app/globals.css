@@ -139,6 +139,8 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 .roboto-condensed {
