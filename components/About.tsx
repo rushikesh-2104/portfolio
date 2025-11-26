@@ -92,14 +92,14 @@ const About = () => {
 
 
 <div className="relative text-gray-300 md:absolute md:bottom-50  w-full">
-  <span className='relative md:left-10 md:top-10 top-70 left-70'>version</span>
-  <span className='relative left-2 md:left-220 md:top-9 top-70'>Socials</span>
+  <span className='relative md:left-30 md:top-10 top-70 left-70'>version</span>
+  <span className='relative left-2 md:left-240 md:top-9 top-70'>Socials</span>
 </div>
 
 
         <div className='relative top-75 md:left-0 right-75 md:top-130 flex justify-between md:px-5 text-gray-300'>
-          <span className='flex relative md:bottom-0 bottom-0 md:left-10 left-140'> 2025 <Copyright/> Edition</span>
-          <span className="md:flex relative left-13 md:-left-10">
+          <span className='flex relative md:bottom-0 bottom-0 md:left-20 left-140'> 2025 <Copyright/> Edition</span>
+          <span className="md:flex relative left-13 md:-left-60">
             <Link004 href="https://www.instagram.com/emoji2104/">Instagram</Link004>
             <Link004 href="https://www.linkedin.com/in/contactrushikesh21/">LinkedIn</Link004>
             <Link004 href="https://github.com/rushikesh-2104">Github</Link004>
