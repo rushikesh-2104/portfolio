@@ -19,7 +19,7 @@ const About = () => {
   ];
 
   return (
-<div className='roboto-condensed w-full box-border overflow-x-hidden md:h-[280vh] h-[180vh] py-20 px-10 flex justify-center bg-black z-1000 absolute'>
+<div className='roboto-condensed w-full box-border overflow-x-hidden md:h-[280vh] h-[213vh] py-20 px-10 flex justify-center bg-black z-1000 absolute'>
       <div className='text-white'>
         {/* Fixed unescaped quotes */}
         <h1 className='md:text-5xl text-lg text-center  italic'>
@@ -99,7 +99,7 @@ const About = () => {
 
         <div className='relative top-75 md:left-0 right-75 md:top-130 flex justify-between md:px-5 text-gray-300'>
           <span className='flex relative md:bottom-0 bottom-0 md:left-10 left-140'> 2025 <Copyright/> Edition</span>
-          <span className="md:flex relative left-13 md:-left-40">
+          <span className="md:flex relative left-13 md:-left-10">
             <Link004 href="https://www.instagram.com/emoji2104/">Instagram</Link004>
             <Link004 href="https://www.linkedin.com/in/contactrushikesh21/">LinkedIn</Link004>
             <Link004 href="https://github.com/rushikesh-2104">Github</Link004>
