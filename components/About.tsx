@@ -28,19 +28,19 @@ const About = () => {
 
         
 
-        <div className="relative md:top-40 top-28 md:left-20 left-0  w-[90vw] border-t border-gray-300"></div>
+        <div className="relative md:top-40 top-28 md:left-20 left-10  w-[90vw] border-t border-gray-300"></div>
 
         <Link href="/Aboutme">       
-  <div className="relative md:top-12 md:left-250 top-5 left-45 md:h-[30vh] md:w-[15vw] w-[40vw]  h-[20vh] rounded-full bg-white text-black flex justify-center items-center text-3xl overflow-hidden group">
+  <div className="relative md:top-12 md:left-250 top-5 left-50 md:h-[30vh] md:w-[15vw] w-[40vw]  h-[20vh] rounded-full bg-white text-black flex justify-center items-center text-3xl overflow-hidden group">
     <span className="lora relative md:text-4xl text-2xl z-10">About Me</span>
     <span className="absolute inset-0 bg-amber-100  scale-0 group-hover:scale-100  transition-transform duration-300 ease-out rounded-full "></span>
   </div>
 </Link>
 
 
-        <div className='md:text-xl md:left-23 relative md:top-40 top-20 left-10'>RECENT WORKS :</div>
+        <div className='md:text-xl md:left-23 relative md:top-40 md:mt-0 mt-15 top-10 left-10'>RECENT WORKS :</div>
 
-      <div className='flex justify-center items-center h-[50vh] w-full mt-15'>
+      <div className='flex justify-center items-center h-[40vh] w-[100vw]  mt-25'>
         <HoverExpand_001 images={images} className='relative top-10 md:top-50  ' />
       </div>
 {/* className='relative md:top-50 top-30 md:w-[100vw] w-full  '  */}
